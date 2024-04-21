@@ -14,9 +14,9 @@ def main():
     
     # Input fields for the three numbers
     st.sidebar.header("Enter Numbers")
-    number1 = st.sidebar.number_input("First Number", step=1)
-    number2 = st.sidebar.number_input("Second Number", step=1)
-    number3 = st.sidebar.number_input("Third Number", step=1)
+    number1 = st.sidebar.number_input("First Number" )
+    number2 = st.sidebar.number_input("Second Number" )
+    number3 = st.sidebar.number_input("Third Number")
     
     # Button to calculate the largest number
     st.sidebar.markdown("---")
