@@ -5,16 +5,23 @@ def largest_of_three(a, b, c):
 
 def main():
     st.title("Largest of Three Numbers Calculator")
-    st.write("Created by Anurag Sinha")
-    st.write("@21f3002198")
+    st.markdown(
+        """
+        **Created by:** Anurag Sinha (21f3002198)
+        """
+    )
+    st.write("This simple app calculates the largest of three numbers entered by the user.")
     
     # Input fields for the three numbers
-    number1 = st.number_input("Enter the first number:")
-    number2 = st.number_input("Enter the second number:")
-    number3 = st.number_input("Enter the third number:")
+    st.sidebar.header("Enter Numbers")
+    number1 = st.sidebar.number_input("First Number", step=1)
+    number2 = st.sidebar.number_input("Second Number", step=1)
+    number3 = st.sidebar.number_input("Third Number", step=1)
     
     # Button to calculate the largest number
-    if st.button("Calculate"):
+    st.sidebar.markdown("---")
+    st.sidebar.header("Options")
+    if st.sidebar.button("Calculate"):
         largest = largest_of_three(number1, number2, number3)
         st.success(f"The largest number is: {largest}")
 
