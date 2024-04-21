@@ -5,6 +5,8 @@ def largest_of_three(a, b, c):
 
 def main():
     st.title("Largest of Three Numbers Calculator")
+    st.write("Created by Anurag Sinha")
+    st.write("@21f3002198")
     
     # Input fields for the three numbers
     number1 = st.number_input("Enter the first number:")
